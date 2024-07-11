@@ -1,0 +1,15 @@
+    .contactt{
+        /* border: 2px solid black; */
+        margin-top: 150px;
+        height: 170vh;
+        overflow-y: scroll;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .contactt{
+            height: 150vh;
+            margin-top: 50px;
+        }
+
+    }

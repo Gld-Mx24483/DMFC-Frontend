@@ -1,0 +1,131 @@
+/* gallery.css */
+.gallery-main-container {
+    padding: 20px;
+  }
+  
+  .upload-button {
+    background-color: rgb(238, 132, 3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .media-input {
+    margin: 20px;
+    width: 89.7%;
+  }
+
+  .file-preview video{
+    width: 30%;
+    margin: 20px;
+  }
+
+  .file-preview img{
+    width: 30%;
+    margin: 20px;
+  }
+  
+  .title-input{
+    width: 95%;
+    margin: 20px;
+    padding: 5px;
+    height: 80px;
+  }
+
+  .upload-section .date-input{
+    margin: 20px;
+  }
+  
+  .submit-button {
+    background-color: rgb(238, 132, 3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .media-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .media-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 0;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    flex: 0 0 calc(32.3% - 20px); 
+    width: 30%;
+  }
+
+  .media-item img{
+    width: 85%;
+    height: 44vh;
+    padding: 30px;
+    object-fit: contain;
+  }
+
+  .media-item video{
+    width: 85%;
+    height: 44vh;
+    padding: 30px;
+    object-fit: contain;
+  }
+  
+  .delete-icon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .media-item:hover .delete-icon {
+    display: block;
+  }
+
+  .media-list-txt{
+    border: 2px solid #ccc;
+    background-color: #ccc;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 10px;
+    transform: translateY(1px);
+  }
+
+  @media (max-width: 500px) {
+    .media-item {
+      flex: 0 0 calc(100% - 10px); 
+      margin-left: 5px;
+      padding: 20px;
+    }
+  
+    .media-item img {
+      height: auto;
+    }
+  
+    .media-item video {
+      width: 95%;
+      height: auto;
+      margin-left: -30px;
+    }
+
+    .upload-button{
+      margin-left: 20px;
+    }
+
+    .submit-button{
+      margin-left: 20px;
+    }
+  }
+  

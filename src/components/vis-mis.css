@@ -1,0 +1,88 @@
+/* vis-mis.css */
+.vis-mis-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+  }
+  
+  .vision-container,
+  .goal-container {
+    width: 48%; 
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 64, 0, 0.754);
+  }
+
+  .vision-container h2,
+  .goal-container h2{
+    font-size: 60px;
+    margin-top: -16px;
+  }
+
+  .vision-container{
+    transform: translateY(-20px);
+  }
+
+  .goal-container{
+    transform: translateY(550px);
+    height: 20rem;
+  }
+  
+  .icon {
+    font-size: 100px;
+    margin-bottom: 15px;
+    color: rgb(255, 64, 0);
+    padding: 15px;
+
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #555;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .vis-mis-container {
+      padding: 20px; /* Adjusted padding for better spacing on smaller screens */
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .vision-container,
+    .goal-container {
+      width: 100%;
+      margin-bottom: 20px; /* Adjusted margin for better spacing */
+    }
+
+    .vision-container{
+      margin-top: 30px;
+    }
+  
+    .vision-container h2,
+    .goal-container h2 {
+      font-size: 20px; /* Adjusted font size for better readability */
+    }
+  
+    .vision-container p,
+    .goal-container p {
+      font-size: 14px; /* Adjusted font size for better readability */
+    }
+
+    .goal-container {
+      transform: translateY(20px);
+       margin-bottom: 50px;
+    }
+  
+    .icon {
+      font-size: 50px; /* Adjusted icon size for better proportion */
+    }
+  }

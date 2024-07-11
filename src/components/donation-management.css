@@ -1,0 +1,114 @@
+/* donation-management.css */
+.donation-management-main-container {
+    padding: 20px;
+  }
+  
+  .search-input,
+  .filter-select,
+  .sort-button {
+    margin-bottom: 30px;
+  }
+  
+  .donation-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .donation-table th, .donation-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    height: 5vh;
+  }
+  
+  .donation-table th {
+    background-color: #f2f2f2;
+  }
+
+  .donation-table td {
+    vertical-align: top;
+  }
+
+  .filter-select {
+    margin-bottom: 10px; 
+    padding: 8px; 
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .sort-button {
+    margin-left: 20px; 
+    margin-bottom: 10px; 
+    background-color: rgb(238, 132, 3);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 16px; 
+    border-radius: 5px; 
+    height: 6vh;
+  }
+  
+  .sort-button:hover {
+    background-color: rgb(203, 113, 2);
+  }
+  
+  .sort-button:active {
+    background-color: rgb(203, 113, 2);
+  }
+  
+  @media screen and (max-width: 500px) {
+    .donation-table tbody,
+    .donation-table tr,
+    .donation-table td{
+      display: block;
+    }
+
+    .filter-select{
+      margin-left: 18px;
+      margin-bottom: 0;
+    }
+
+    .search-input  {
+      display: block;
+      margin: 20px 18px;
+      width: calc(100% - 100px);
+      height: 1vh;
+    }
+
+    .donation-table {
+      width: 90%;
+      overflow-x: auto;
+      margin-left: 40px; 
+      font-size: 12px;
+    }
+
+    .donation-table thead tr{
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    .donation-table td{
+      position: relative;
+      padding-left: 50%;
+      border-bottom: 1px solid #eeeeee64;
+      font-weight: lighter;
+      height: 80px;
+    }
+
+    .donation-table td::before{
+      content: attr(data-title);
+      position: absolute;
+      left: 6px;
+      font-weight: bold;
+    }
+
+    .donation-table tr{
+      border-bottom: 2px solid #ccc;
+      margin: 70px 0;
+      margin-right: 10px;
+    }
+  }

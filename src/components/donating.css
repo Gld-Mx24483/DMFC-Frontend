@@ -1,0 +1,181 @@
+/* donate.css */
+.donating-container {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 29, 35, .8), rgba(0, 29, 35, 0.8)),
+    url(../Media/Pictures/Hands-solidarity.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .donating-sub-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .donating-left-half {
+    width: 40%;
+    text-align: left;
+    padding: 20px;
+    
+  }
+
+  .donating-left-half h3{
+    font-size: 28px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.735);
+    padding: 10px;
+    color: rgb(255, 64, 0);
+    width: 151px;
+    border-radius: 50px;
+    font-weight: lighter;
+  }
+
+  .donating-left-half p{
+    color: rgba(255, 255, 255, 0.571);
+    padding: 30px;
+    padding-left: 15px;
+    width: 450px;
+  }
+
+  .donating-left-half h2{
+    font-size: 60px;
+    color: white;
+  }
+  
+  .donating-right-half {
+    width: 35%;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    border-radius: 10px;
+  }
+  
+  .donating form {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-20px);
+    padding: 50px;
+  }
+  
+  .donating input {
+    margin-bottom: 40px;
+    padding: 32px 40px;
+    outline: none;
+    border: none;
+    background-color: rgba(210, 210, 210, 0.252);
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .donating input:focus::placeholder {
+    transform: translateY(-25px);
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .donate-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: rgb(238, 132, 3);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: all ease-in-out .4s;
+    width: 250px;
+    border: none;
+  }
+
+  .donate-btn i{
+    background-color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    color: rgb(238, 132, 3);
+    padding: 7px;
+    transform: translateY(3px);
+    width: 26px;
+  }
+  
+  .donate-btn:hover {
+    background-color: rgba(255, 140, 0, 0.8);
+  }
+  
+  .donate-btn svg {
+    margin-left: 5px;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .donating-container {
+      height: auto; /* Adjust height */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .donating-sub-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 55px;
+    }
+  
+    .donating-left-half {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .donating-left-half h3 {
+      font-size: 20px; /* Adjust font size */
+      margin-bottom: 10px; /* Adjust margin */
+      width: 40%; /* Adjust width */
+      margin-left: 10px;
+    }
+  
+    .donating-left-half p {
+      padding: 15px; /* Adjust padding */
+      width: 90%; /* Adjust width */
+    }
+  
+    .donating-left-half h2 {
+      font-size: 40px; /* Adjust font size */
+    }
+  
+    .donating-right-half {
+      width: 100%;
+      padding: 20px;
+      height: auto; /* Adjust height */
+      border-radius: 0; /* Remove border-radius */
+    }
+  
+    .donating form {
+      padding: 20px; /* Adjust padding */
+    }
+  
+    .donating input {
+      padding: 30px 15px;
+      font-size: 16px; /* Adjust font size */
+      margin-bottom: 20px; /* Adjust margin */
+    }
+  
+    .donate-btn {
+      padding: 12px 30px; /* Adjust padding */
+      font-size: 16px; /* Adjust font size */
+      width: 60%; /* Adjust width */
+    }
+  
+    .donate-btn i {
+      font-size: 20px; /* Adjust font size */
+    }
+  }

@@ -1,0 +1,138 @@
+/* about-us.css */
+.about-us-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  margin-top: 40px;
+}
+
+.image-text{
+  display: flex;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 20px;
+  margin-left: 50px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-us-content {
+  flex: 1;
+  max-width: 50%;
+  color: #333;
+  margin-top: -80px;
+  padding-left: 50px;
+  padding-right: 50px; /* Adjusted padding */
+}
+
+.about-us-container h3 {
+  font-size: 50px;
+  margin-top: 70px;
+}
+
+.about-us-content p {
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.contact-us {
+  margin-top: 20px;
+  margin-left: 19rem;
+}
+
+.contact-us-link {
+  display: inline-block;
+  padding: 15px 40px;
+  background-color: rgb(238, 132, 3);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: all ease-in-out 0.4s;
+}
+
+.contact-us-link i {
+  margin-left: 5px;
+}
+
+.contact-us a:hover {
+  color: rgb(255, 140, 0);
+  background-color: rgba(255, 140, 0, 0);
+  border: 1px solid rgb(255, 140, 0);
+}
+
+.contact-us i {
+  background-color: white;
+  border-radius: 50%;
+  font-size: 25px;
+  color: rgb(238, 132, 3);
+  padding: 7px;
+  transform: translateY(3px);
+  width: 26px;
+}
+
+@media (max-width: 500px) {
+  .about-us-container {
+    padding: 20px; 
+    height: auto;
+  }
+
+  .image-text {
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+  }
+
+  .about-us-image {
+    max-width: 100%;
+    padding-right: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+
+  .about-us-content {
+    max-width: 100%;
+    padding-left: 20px; 
+    padding-right: 20px; 
+    text-align: center;
+  }
+
+  .about-us-content h2 {
+    font-size: 22px;
+    width: 100px; 
+    transform: translateY(-370px);
+    margin-left: 85px;
+  }
+
+  .about-us-container h3 {
+    font-size: 36px; /* Adjust font size */
+  }
+
+  .about-us-content p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .contact-us {
+    margin-top: 10px; /* Adjusted margin */
+    margin-left: 0; /* Adjusted margin */
+  }
+
+  .contact-us-link {
+    padding: 12px 30px; /* Adjusted padding */
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .contact-us i {
+    font-size: 20px; /* Adjust font size */
+  }
+}

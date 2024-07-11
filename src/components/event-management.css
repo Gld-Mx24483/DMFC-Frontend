@@ -1,0 +1,270 @@
+.event-management-main-container {
+    padding: 20px;
+    border: none;
+  }
+  
+  .add-event-button {
+    background-color: rgb(238, 132, 3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .event-section {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .event-picture {
+    margin-bottom: 40px;
+    width: 30%;
+    height: auto;
+  }
+
+  .event-form input{
+    height: 50px;
+  }
+  
+  .event-form input,
+  .event-form textarea {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .event-form textarea {
+    height: 100px;
+    width: 95%;
+  }
+  
+  .save-event-button {
+    background-color: rgb(238, 132, 3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 240px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  
+  .event-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 370px;
+    position: relative;
+    padding: 40px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  }
+
+  .event-image-container {
+    flex-grow: 1;
+    overflow: hidden;
+  }  
+
+  .event-image-container img {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 44vh;
+    object-fit: contain;
+  }
+
+  .trash-icon {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: none;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 17px;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: none;
+    color: black;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 17px;
+  }
+  
+  .event-item:hover .edit-icon,
+  .event-item:hover .trash-icon {
+    display: block; 
+  }
+  
+  .event-details {
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .event-details p {
+    margin: 5px 0;
+  }
+  
+.no-events-message {
+  text-align: center;
+  opacity: 0.5;
+  width: 1200px;
+  transform: translate(90px, 0px);
+}
+
+.no-events-message p{
+  font-size: 100px;
+  color: #c4c3c3;
+}
+
+.no-events-icon {
+  font-size: 150px;
+  margin-bottom: 10px;
+  color: #c4c3c3;
+}
+
+.can svg{
+  margin-right: 10px;
+}
+
+@media (width: 360px) {
+  .event-item {
+    max-width: 200px;
+    transform: translateX(-9px);
+  }
+
+  .edit-icon,
+  .trash-icon {
+    font-size: small;
+  }
+}
+
+@media (width: 320px) {
+  .event-item {
+    max-width: 165px;
+    transform: translateX(-9px);
+  }
+
+  .edit-icon,
+  .trash-icon {
+    font-size: small;
+  }
+}
+
+@media (width: 375px) {
+  .event-item {
+    max-width: 220px;
+    transform: translateX(-9px);
+  }
+
+  .edit-icon,
+  .trash-icon {
+    font-size: small;
+  }
+}
+
+@media (width: 390px) {
+  .event-item {
+    max-width: 235px;
+    transform: translateX(-9px);
+  }
+
+  .edit-icon,
+  .trash-icon {
+    font-size: small;
+  }
+}
+
+@media (width: 412px) {
+  .event-item {
+    max-width: 255px;
+    transform: translateX(-9px);
+  }
+
+  .edit-icon,
+  .trash-icon {
+    font-size: small;
+  }
+}
+
+@media  (max-width: 500px) {
+  .add-event-button{
+    margin-left: 20px;
+  }
+
+  .event-section{
+    margin-left: 20px;
+  }
+
+  .event-item {
+    width: 80%;
+    margin-left: -75px;
+  }
+
+  .event-details {
+    padding: 10px;
+    width: 100%; 
+  }
+
+  .event-details p {
+    margin: 5px 0;
+    font-size: 14px; 
+  }
+
+  .event-picture {
+    margin-bottom: 20px; 
+    width: 100%;
+    height: auto;
+  }
+
+  .no-events-message{
+    margin-top: 15;
+    width: 60%;
+    margin-left: -30px;
+  }
+
+  .no-events-message p {
+    font-size: 26px; 
+  }
+
+  .no-events-icon {
+    font-size: 50px; 
+  }
+
+  .event-section{
+    width: 92%;
+    margin-left: 10px;
+  }
+
+  .event-dt .react-calendar{
+    transform: translateX(5px);
+  }
+
+  .event-form{
+    width: 90%;
+  }
+
+  .event-form input{
+    height: 50px;
+  }
+
+  .event-form textarea{
+    margin-left: 0;
+    width: 98%;
+  }
+}

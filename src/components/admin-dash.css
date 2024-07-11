@@ -1,0 +1,162 @@
+/*admin-dash.css */
+
+.admin-dash-main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-dash-sidebar {
+  width: 200px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.admin-dash-sidebar h2{
+  color: white;
+  font-size: 22px;
+  margin-left: -25px;
+}
+
+.admin-dash-options {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: -25px;
+}
+
+.admin-dash-option {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
+  text-align: left;
+  width: 100%;
+}
+
+.admin-dash-option.selected {
+  background-color: #555;
+}
+
+.admin-dash-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.admin-dash-content h1 {
+  color: #333;
+}
+
+.menu-icons{
+  visibility: hidden;
+}
+
+@media (max-width: 360px) {
+  .admin-dash-sidebar{
+    max-height: 94vh;
+  }
+
+  .admin-dash-sidebar h2 {
+    transform: translateX(-17px);
+  }
+}
+
+@media (width: 375px) {
+  .admin-dash-sidebar{
+    max-height: 94vh;
+  }
+
+  .admin-dash-sidebar h2 {
+    transform: translateX(-17px);
+  }
+}
+
+@media (width: 390px) {
+  .admin-dash-sidebar{
+    max-height: 95.5vh;
+  }
+
+  .admin-dash-sidebar h2 {
+    transform: translateX(-17px);
+  }
+}
+
+@media (width: 430px) {
+  .admin-dash-sidebar{
+    max-height: 95.8vh;
+  }
+
+  .admin-dash-sidebar h2 {
+    transform: translateX(-17px);
+  }
+}
+
+@media (width: 412px) {
+  .admin-dash-sidebar{
+    max-height: 95.7vh;
+  }
+
+  .admin-dash-sidebar h2 {
+    transform: translateX(-17px);
+  }
+}
+
+@media (width: 414px) {
+  .admin-dash-sidebar{
+    max-height: 94.8vh;
+  }
+
+  .admin-dash-sidebar h2 {
+    transform: translateX(-17px);
+  }
+}
+
+@media (max-width: 500px) {
+  .admin-dash-sidebar {
+    position: absolute;
+    left: -200px;
+    z-index: 1;
+    height: 102.3%;
+    transform: translateX(0);
+    transition: all ease-in-out .3s;
+  }
+
+  .admin-dash-sidebar.open {
+    transform: translateX(200px);
+  }
+
+  .admin-dash-sidebar.open .admin-dash-option{
+    transform: translateX(0);
+  }
+
+  .admin-dash-option{
+    transform: translateX(-30px);
+  }
+
+  .menu-icons {
+    display: block;
+    position: absolute;
+    left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 3;
+    color: white;
+    visibility: visible;
+  }
+
+  .admin-dash-content h1{
+    margin-left: 30px;
+  }
+
+  .admin-dash-sidebar h2{
+    margin-left: -10px;
+  }
+}

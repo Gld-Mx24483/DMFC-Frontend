@@ -1,0 +1,78 @@
+/* oreach.css */
+.oreach-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .oreach-content {
+    max-width: 800px;
+    text-align: justify;
+  }
+  
+  .oreach-content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .goals-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    display: block;
+    margin-top: -20px;
+  }
+  
+  li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+  }
+  
+  .Impact {
+    margin-top: 70px;
+  }
+
+  @media only screen and (max-width: 500px) {
+    .oreach-main-container {
+      padding: 40px;
+      height: auto;
+    }
+  
+    .oreach-content h1 {
+      font-size: 30px; /* Adjusted font size for better readability on larger screens */
+      margin-bottom: 20px; /* Adjusted margin */
+    }
+  
+    .oreach-content p {
+      font-size: 16px; /* Adjusted font size for better readability on larger screens */
+      margin-bottom: 15px; /* Adjusted margin */
+    }
+  
+    .oreach-content h2 {
+      font-size: 24px; /* Adjusted font size for better readability on larger screens */
+      margin-bottom: 15px; /* Adjusted margin */
+    }
+  
+    .oreach-content li {
+      font-size: 16px; /* Adjusted font size for better readability on larger screens */
+      margin-bottom: 8px; /* Adjusted margin */
+    }
+  
+    .Impact {
+      margin-top: 70px; /* Reset margin for larger screens */
+    }
+  }

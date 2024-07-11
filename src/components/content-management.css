@@ -1,0 +1,413 @@
+.content-management-main-container {
+    padding: 20px;
+    border: none;
+  }
+
+  .no-content{
+    margin-left: -120px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .content-form input,
+  .content-form textarea {
+    margin-bottom: 10px;
+    width: 93%;
+    height: 8px;
+  }
+
+  .content-form textarea{
+    height: 40vh;
+  }
+
+  .fileupload .remove-file {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #dc3545;
+    cursor: pointer;
+  }
+
+.fileupload {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  width: 95.7%;
+}
+
+.fileupload:hover {
+  border-color: #007bff;
+}
+
+.fileupload p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.fileupload input[type="file"] {
+  display: none;
+}
+
+.fileupload img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.fileupload video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+  .content-body{
+    height: 40vh;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    width: 99%;
+  }
+  
+  .content-form input[type="file"],
+  .content-form input[type="datetime-local"] {
+    margin-bottom: 20px;
+  }
+
+  .content-form img{
+    width: 20%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+
+  .content-form video{
+    width: 30%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .content-list {
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    background-color: #f5f5f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-item h3 {
+    margin-bottom: 5px;
+  }
+  
+  .content-item p {
+    margin: 5px 0;
+  }
+  
+  .content-item svg {
+    margin-right: 10px;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+  }
+
+  .content-item .Pen{
+    margin-right: 50px;
+  }
+
+  .content-item svg:last-child {
+    right: unset;
+    left: 50px;
+    border: 2px solid blue;
+  }
+
+  .delete-imgvid {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: translate(20px, -20px);
+  }
+  
+  .delete-imgvid:hover {
+    background-color: #bd2130;
+  }
+
+.create-content-button,
+.content-form .but{
+  background-color: rgb(238, 132, 3);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px; 
+}
+
+.create-content-button:hover,
+.content-form button:hover {
+  background-color: rgb(203, 113, 4); 
+}
+
+.create-content-button svg {
+  margin-right: 5px;
+}
+
+.custom-froala-editor {
+  height: 46vh;
+  margin-bottom: 20px;
+  overflow-y: auto; 
+  position: relative;
+}
+
+.custom-froala-editor .fr-dropdown-wrapper ul {
+  max-height: 200px;
+  overflow-y: auto; 
+  display: block;
+}
+
+.custom-froala-editor .fr-dropdown-wrapper ul li {
+  transform: translateY(0px);
+  color: #333;
+
+}
+
+.custom-froala-editor .fr-toolbar {
+  background-color: #f0f0f0;
+  position: sticky;
+  z-index: 999;
+}
+
+.custom-froala-editor .fr-command {
+  font-size: 16px;
+}
+
+.custom-froala-editor .fr-dropdown-menu {
+  background-color: #fff;
+}
+
+.custom-froala-editor .fr-dropdown-wrapper ul li:hover {
+  background-color: #f0f0f0;
+}
+.media {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.content-list .image{
+  width: 50%;
+}
+
+.content-list .video{
+  height: 60vh;
+}
+
+.date-time-picker{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.date-time-picker .react-calendar {
+  margin-right: 20px;
+}
+
+.date-time-picker input[type="time"] {
+  margin-left: 20px; 
+  width: 200px;
+  height: 60px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #f8f8fa;
+  color: #333;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.react-calendar__tile{
+  background-color:rgba(128, 128, 128, 0.155);
+  height: 40px;
+}
+
+.react-calendar { 
+  background-color: #fff;
+  color: #222;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+ }
+
+ .react-calendar__navigation button {
+  color: #1c2bab;
+  min-width: 44px;
+  background: none;
+  font-size: 20px;
+  margin-top: 8px;
+ }
+
+ .react-calendar__navigation button[disabled] {
+  background-color: #f0f0f0;
+ }
+
+ abbr[title] {
+  text-decoration: none;
+ }
+
+ .react-calendar__tile--now {
+  background: #01063f;
+  border-radius: 6px;
+  font-weight: bold;
+  color: #6f48eb;
+ }
+
+ .react-calendar__tile--hasActive:enabled:hover,
+ .react-calendar__tile--hasActive:enabled:focus {
+  background: #f8f8fa;
+ }
+
+ .react-calendar__tile--active:disabled,
+ .react-calendar__tile--active:disabled {
+  background: #01063f;
+  color: white;
+  border-radius: 10px;
+ }
+
+.react-calendar__tile--active:enabled,
+ .react-calendar__tile--active:enabled {
+  background: #01063f;
+  color: white;
+  border-radius: 10px;
+ }
+
+.react-calendar__tile--active:enabled:hover,
+ .react-calendar__tile--active:enabled:focus {
+  background: #01063f;
+  color: white;
+  border-radius: 10px;
+ }
+
+.upload-progress{
+  width: 100px;
+  transform: translateX(10px);
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .create-content-button{
+    margin-left: 20px;
+  }
+
+  .content-form{
+    margin-left: 20px;
+  }
+
+  .date-time-picker {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .date-time-picker .react-calendar {
+    margin-right: 0; 
+    margin-bottom: 20px; 
+    max-width: 275px;
+    margin-left: 14px;
+    font-size: 13px;
+  }
+  
+  .react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .react-calendar__navigation button {
+    color: #1c2bab;
+    min-width: auto;
+    background: none;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  
+    .date-time-picker input[type="time"] {
+      max-width: 300px;
+      margin-left: 0;
+      width: 100%;
+      height: 60px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      background-color: #f8f8fa;
+      color: #333;
+      font-size: 26px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 20px; 
+    }
+
+    .custom-froala-editor {
+      max-height: 200px;
+    }
+
+    .content-item {
+      padding: 30px;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+  
+    .content-item h3 {
+      font-size: 20px;
+    }
+  
+    .content-item p {
+      font-size: 14px;
+    }
+  
+    .content-item .Pen {
+      margin-right: 40px;
+      margin-top: 0;
+      font-size: small;
+    }
+
+    .content-item .Trash{
+      font-size: small;
+    }
+  
+    .content-item .media {
+      width: 100%;
+      height: auto;
+    }
+
+    .wysiwyg{
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .no-content{
+      width: 260px;
+      margin-left: -60px;
+    }
+}

@@ -1,0 +1,90 @@
+/* brief-info.css */
+.brief-info-navbar {
+    background: linear-gradient(rgba(29, 34, 41, 0.815), rgba(29, 34, 41, 0.815));
+    padding: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.66);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.108);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .brief-info-navbar.hide {
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+  }
+  
+  .info-left {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  
+  .info-left svg {
+    margin-right: 5px;
+    padding: 0px 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .info-left svg:hover {
+    color: #fff;
+  }
+
+  .info-right svg:hover {
+    color: #fff;
+  }
+  
+  .info-right {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+  }
+  
+  .info-right svg {
+    margin: 0 5px;
+    padding: 0px 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 500px) {
+  .brief-info-navbar {
+    padding: 10px; 
+    visibility: hidden;
+  }
+
+  .info-left,
+  .info-right {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    margin-left: -25px;
+    height: 20px;
+  }
+
+  .info-left {
+    flex-grow: 1;
+  }
+
+  .info-left svg,
+  .info-right svg {
+    margin: 0 5px;
+    padding: 0px 5px; 
+    font-size: 10px; 
+  }
+
+  .info-left svg {
+    margin-right: 5px;
+  }
+
+  .info-right {
+    justify-content: flex-end; 
+  }
+}
